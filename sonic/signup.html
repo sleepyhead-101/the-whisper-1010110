@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                      
+    <meta name="description" content="Sign up for Whisper Wall to share anonymous messages">
+    <title>Whisper Wall - Spectral Sign Up</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="styles/signup.css">
+</head>
+<body>
+    <div class="ghost" style="top: 10%; left: 5%; animation-delay: 0s;"></div>
+    <div class="ghost" style="top: 70%; left: 80%; animation-delay: 2s; width: 50px; height: 65px;"></div>
+    <div class="ghost" style="top: 30%; left: 60%; animation-delay: 4s; width: 70px; height: 90px;"></div>
+    <div class="ghost" style="top: 80%; left: 20%; animation-delay: 6s;"></div>
+    <div class="ghost" style="top: 20%; left: 40%; animation-delay: 8s; width: 55px; height: 70px;"></div>
+    <div class="container">
+        <h1>Whisper Wall</h1>
+        <p class="subtitle">Join our spectral community of anonymous whispers</p>
+        <form id="whisperForm" action="https://formsubmit.co/one264359@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Whisper Wall Signup">
+            <input type="hidden" name="_autoresponse" value="Thank you for signing up to Whisper Wall! Your account is being prepared and you'll receive access soon.">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://sleepyhead-101.github.io/the whisper-1010110/thank-you.html">
+
+            <input type="text" name="_honey" style="display:none">
+            <div class="form-group">
+                <label for="name">Full Name <span class="required-indicator">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="Your full name" aria-describedby="name-error">
+                <div class="error-message" id="name-error">Please enter your full name</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address <span class="required-indicator">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email" aria-describedby="email-error email-requirements">
+                <div class="error-message" id="email-error">Please enter a valid email address</div>
+                <div class="requirements" id="email-requirements">
+                    <div class="requirement"><i class="fas fa-circle invalid" id="email-at"></i> Must contain @ symbol</div>
+                    <div class="requirement"><i class="fas fa-circle invalid" id="email-dot"></i> Must contain a dot (.)</div>
+                    <div class="requirement"><i class="fas fa-circle invalid" id="email-domain"></i> Must have valid domain (like .com)</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password <span class="required-indicator">*</span></label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required minlength="8" 
+                           placeholder="At least 8 characters" autocomplete="new-password"
+                           aria-describedby="password-error password-requirements">
+                    <button type="button" class="toggle-password" aria-label="Show password">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <div class="password-strength">
+                    <div class="strength-meter" id="strength-meter" aria-hidden="true"></div>
+                </div>
+                <div class="error-message" id="password-error">Password must meet all requirements below</div>
+                <div class="requirements" id="password-requirements">
+                    <div class="requirement"><i class="fas fa-circle invalid" id="length-req"></i> At least 8 characters</div>
+                    <div class="requirement"><i class="fas fa-circle invalid" id="number-req"></i> Contains at least one number</div>
+                    <div class="requirement"><i class="fas fa-circle invalid" id="letter-req"></i> Contains at least one letter</div>
+                </div>
+            </div>
+            <div class="checkbox-container">
+                <input 
+                    type="checkbox" 
+                    id="agree-checkbox" 
+                    name="agree" 
+                    required
+                    aria-required="true"
+                    class="visually-hidden"
+                    aria-describedby="terms-error"
+            >
+                <label for="agree-checkbox" class="checkbox-label">
+                    <span class="custom-checkbox" aria-hidden="true">
+                        <svg class="check-icon" viewBox="0 0 24 24" focusable="false">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                        </svg>
+                    </span>
+                    <span class="label-text">
+                        I acknowledge that I have read and agree to the
+                        <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="terms-link">Privacy Policy</a> and
+                        <a href="terms.html" target="_blank" rel="noopener noreferrer" class="terms-link">Terms of Service</a>.
+                        <span class="required-indicator" aria-hidden="true">*</span>
+                    </span>
+                </label>
+                <div class="terms-error" id="terms-error">
+                    You must agree to the terms to continue
+                </div>
+            </div>
+            <button type="submit" id="submitBtn" aria-live="polite">
+                <span class="button-text">Continue to Whisper Wall</span>
+            </button>
+        </form>
+        <div class="loading" id="loading">
+            <div class="spinner" aria-hidden="true"></div>
+            <p>Summoning your spectral account...</p>
+        </div>
+        <div class="success-message" id="successMessage">
+            <i class="fas fa-check-circle" aria-hidden="true"></i>
+            <p>Account created successfully! Transporting you to the Whisper Wall...</p>
+        </div>
+    </div>
+        <script src="scripts/gghhgghh.js"></script>
+
+</body>
+</html>

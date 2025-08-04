@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Gallery | Image Upload</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-camera-retro"></i> Anonymous Gallery</h1>
+            <p>Upload and share Anonymous moments</p>
+<a href="index.html" class="btn btn-nav">
+    <i class="fas fa-arrow-left"></i> Back to whispers
+</a>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <div id="upload-area" class="upload-area">
+                    <div class="upload-content">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>Drag & Drop your image here</h3>
+                        <p>or</p>
+                        <button class="btn btn-select">Select from device</button>
+                        <input type="file" id="file-input" accept="image/*" hidden>
+                    </div>
+                </div>
+
+                <div id="preview-container" class="preview-container">
+                    <div class="preview-header">
+                        <h3>Image Preview</h3>
+                        <button id="cancel-btn" class="btn btn-cancel"><i class="fas fa-times"></i></button>
+                    </div>
+                    <img id="image-preview" src="#" alt="Preview">
+                    <div class="preview-controls">
+                        <div class="form-group">
+                            <label for="caption-input">Add a caption:</label>
+                            <input type="text" id="caption-input" placeholder="Describe your image...">
+                        </div>
+                        <div class="form-group">
+                            <label for="expiry-select">Expires in:</label>
+                            <select id="expiry-select">
+                                <option value="1">1 Day</option>
+                                <option value="2" selected>2 Days</option>
+                                <option value="7">1 Week</option>
+                                <option value="30">1 Month</option>
+                            </select>
+                        </div>
+                        <div id="progress-bar" class="progress-bar">
+                            <div id="progress" class="progress"></div>
+                        </div>
+                        <button id="upload-btn" class="btn btn-upload"><i class="fas fa-upload"></i> Upload Image</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search images...">
+                </div>
+                <div class="controls-right">
+                    <div class="filter-group">
+                        <label for="filter-select">Filter:</label>
+                        <select id="filter-select">
+                            <option value="all">All Images</option>
+                            <option value="expiring-soon">Expiring Soon</option>
+                            <option value="liked">Liked</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sort-select">Sort by:</label>
+                        <select id="sort-select">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="most-liked">Most Liked</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="gallery">
+                <div class="empty-state">
+                    <i class="fas fa-images"></i>
+                    <h3>No images available</h3>
+                    <p>Upload your first image to get started!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Pink Gallery | All images expire automatically</p>
+        </footer>
+    </div>
+
+   <script src="script/gghhgghh.js"></script>   
+    <script src="script/gghggh.js"></script>
+     <script src="script/hghg.js"></script>
+     <script src="script/hgghgg.js"></script>
+
+    <!-- Floating action button to go back -->
+<a href="index.html" class="btn btn-nav" id="back-btn">
+    <i class="fas fa-arrow-left"></i> Back to Upload
+</a>
+
+<script>
+    // Add image-page class for styling
+    document.body.classList.add('image-page');
+    
+    // Additional protection - disable right click
+    document.addEventListener('contextmenu', function(e) {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+            alert('Image saving is disabled in this gallery');
+        }
+    });
+</script>
+</body>
+</html>
