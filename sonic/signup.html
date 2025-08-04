@@ -5,49 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">                      
     <meta name="description" content="Sign up for Whisper Wall to share anonymous messages">
     <title>Whisper Wall - Spectral Sign Up</title>
-   
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="styles/signup.css">
+    <link rel="stylesheet" href="styles/signup.css">
 </head>
 <body>
+    <!-- Floating Ghost Elements -->
     <div class="ghost" style="top: 10%; left: 5%; animation-delay: 0s;"></div>
     <div class="ghost" style="top: 70%; left: 80%; animation-delay: 2s; width: 50px; height: 65px;"></div>
     <div class="ghost" style="top: 30%; left: 60%; animation-delay: 4s; width: 70px; height: 90px;"></div>
     <div class="ghost" style="top: 80%; left: 20%; animation-delay: 6s;"></div>
     <div class="ghost" style="top: 20%; left: 40%; animation-delay: 8s; width: 55px; height: 70px;"></div>
+
     <div class="container">
-       <h1>Whisper Wall</h1>
-<p class="subtitle">Join our spectral community of anonymous whispers</p>
+        <h1>Whisper Wall</h1>
+        <p class="subtitle">Join our spectral community of anonymous whispers</p>
 
-<form action="https://formspree.io/f/mzzvjpzn" method="POST">
-    <input type="hidden" name="_redirect" value="https://sleepyhead-101.github.io/the-whisper-1010110/sonic/thank-you.html">
-  <!-- Username -->
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required>
-
-  <!-- Email -->
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-
-  <!-- Password -->
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required>
-
-  <!-- Submit Button -->
-  <button type="submit">Sign Up</button>
-</form>
-
-
+        <form action="https://formspree.io/f/mzzvjpzn" method="POST">
+            <!-- FormSpree Hidden Fields -->
+            <input type="hidden" name="_redirect" value="https://sleepyhead-101.github.io/the-whisper-1010110/sonic/thank-you.html">
             <input type="hidden" name="_autoresponse" value="Thank you for signing up to Whisper Wall! Your account is being prepared and you'll receive access soon.">
             <input type="hidden" name="_template" value="table">
-
             <input type="text" name="_honey" style="display:none">
+
+            <!-- Name Field -->
             <div class="form-group">
                 <label for="name">Full Name <span class="required-indicator">*</span></label>
                 <input type="text" id="name" name="name" required placeholder="Your full name" aria-describedby="name-error">
                 <div class="error-message" id="name-error">Please enter your full name</div>
             </div>
+
+            <!-- Username Field -->
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Choose a username">
+            </div>
+
+            <!-- Email Field -->
             <div class="form-group">
                 <label for="email">Email Address <span class="required-indicator">*</span></label>
                 <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email" aria-describedby="email-error email-requirements">
@@ -58,6 +52,8 @@
                     <div class="requirement"><i class="fas fa-circle invalid" id="email-domain"></i> Must have valid domain (like .com)</div>
                 </div>
             </div>
+
+            <!-- Password Field -->
             <div class="form-group">
                 <label for="password">Password <span class="required-indicator">*</span></label>
                 <div class="password-container">
@@ -78,6 +74,8 @@
                     <div class="requirement"><i class="fas fa-circle invalid" id="letter-req"></i> Contains at least one letter</div>
                 </div>
             </div>
+
+            <!-- Terms Checkbox -->
             <div class="checkbox-container">
                 <input 
                     type="checkbox" 
@@ -87,7 +85,7 @@
                     aria-required="true"
                     class="visually-hidden"
                     aria-describedby="terms-error"
-            >
+                >
                 <label for="agree-checkbox" class="checkbox-label">
                     <span class="custom-checkbox" aria-hidden="true">
                         <svg class="check-icon" viewBox="0 0 24 24" focusable="false">
@@ -105,27 +103,26 @@
                     You must agree to the terms to continue
                 </div>
             </div>
+
+            <!-- Submit Button -->
             <button type="submit" id="submitBtn" aria-live="polite">
                 <span class="button-text">Continue to Whisper Wall</span>
             </button>
         </form>
+
+        <!-- Loading Indicator -->
         <div class="loading" id="loading">
             <div class="spinner" aria-hidden="true"></div>
             <p>Summoning your spectral account...</p>
         </div>
+
+        <!-- Success Message -->
         <div class="success-message" id="successMessage">
             <i class="fas fa-check-circle" aria-hidden="true"></i>
             <p>Account created successfully! Transporting you to the Whisper Wall...</p>
         </div>
     </div>
-        <script src="scripts/gghhgghh.js"></script>
 
+    <script src="scripts/gghhgghh.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
