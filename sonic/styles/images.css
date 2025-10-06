@@ -574,4 +574,47 @@ footer {
 .image-page .btn-nav {
     left: 20px;
     right: auto;
+
+}
+.auth-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.user-info {
+    font-size: 14px;
+    color: #495057;
+    font-weight: 500;
+}
+
+.user-badge {
+    background: #007bff;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #dee2e6;
 }
